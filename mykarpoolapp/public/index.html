@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+    <!-- Above is replaced by Google Web Designer Codes Start from here-->
+    <meta charset="utf-8">
+    <title>Karpool</title>
+    <meta name="generator" content="Google Web Designer 1.9.0.0619">
+    <meta name="template" content="Expandable 3.0.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="gwdpage_style.css" rel="stylesheet" data-version="8" data-exports-type="gwd-page">
+    <link href="gwdpagedeck_style.css" rel="stylesheet" data-version="9" data-exports-type="gwd-pagedeck">
+    <script data-source="googbase_min.js" data-version="4" data-exports-type="googbase" src="googbase_min.js"></script><script data-source="gwd_webcomponents_min.js" data-version="5" data-exports-type="gwd_webcomponents" src="gwd_webcomponents_min.js"></script>
+    <script
+    data-source="gwdpage_min.js" data-version="8" data-exports-type="gwd-page" src="gwdpage_min.js"></script><script data-source="gwdpagedeck_min.js" data-version="9" data-exports-type="gwd-pagedeck" src="gwdpagedeck_min.js"></script>
+  </head>
+  <body class="document-body">
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->  
+    <div is="gwd-pagedeck" class="gwd-page-container" id="pagedeck">
+      <div is="gwd-page" id="page1" class="gwd-page-wrapper page1-content gwd-lightbox" data-gwd-width="550px" data-gwd-height="400px">
+        <div class="gwd-page-content page1-content">
+          <div class="gwd-div-c9u4 gwd-div-1f4t" id="Header"></div>
+          <div class="gwd-div-c9u4 gwd-div-p0pw" id="Body"></div><span class="gwd-span-qwlc" id="Karpool_Logo">Karpool Logo</span><span class="gwd-span-qwlc gwd-span-1d5a" id="Ride_Seekers_Text">Ride Seekers<br></span><span class="gwd-span-qwlc gwd-span-1d5a gwd-span-92ff" id="Drivers_Text">Drivers<br><br class=""></span>
+          <span class="gwd-span-1ukn" id="Carpool_Name">Karpool Name</span>
+          <div class="gwd-div-1hs3" id="UserProfile"></div>
+          <div class="gwd-div-gout" id="Footer"></div>
+          <div class="gwd-div-10xz gwd-gen-1lrkgwdanimation" id="RideSeekers"></div>
+          <div class="gwd-div-n508" id="Drivers"></div>
+          <div class="gwd-div-6jgr" id="RideSeekersIcon"></div>
+          <p class="gwd-p-12wr" id="passenger_n">@Passenger(n)</p>
+          <p class="gwd-p-12wr gwd-p-78kq" id="passenger_n1">@Passenger(n+1)</p>
+          <div class="gwd-div-6jgr gwd-div-3zm5" id="DriversIcon"></div>
+          <p class="gwd-p-12wr gwd-p-1bw5" id="drivers_n">@Driver(n)</p>
+          <p class="gwd-p-12wr gwd-p-78kq gwd-p-10wb" id="drivers_n1">@Driver(n+1)</p>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" id="gwd-init-code">
+      (function() {
+        document.body.style.opacity = "0";
+        var pageDeck = document.getElementById('pagedeck');
+        /**
+         * Handles the DOMContentLoaded event. The DOMContentLoaded event is
+         * fired when the document has been completely loaded and parsed.
+         */
+
+        function handleDomContentLoaded(event) {}
+
+        /**
+         * Handles the WebComponentsReady event. This event is fired when all
+         * custom elements have been registered and upgraded.
+         */
+        function handleWebComponentsReady(event) {
+          document.body.style.opacity = "";
+          setTimeout(function() {
+            pageDeck.goToPage(pageDeck.getDefaultPage().id);
+          }, 0);
+        }
+
+        window.addEventListener('DOMContentLoaded',
+          handleDomContentLoaded, false);
+        window.addEventListener('WebComponentsReady',
+          handleWebComponentsReady, false);
+      })();
+    </script>
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyA-ek_1JgPvtFH2b7CbtpqQxKb4oXr0Poc",
+      authDomain: "carpool-d818a.firebaseapp.com",
+      databaseURL: "https://carpool-d818a.firebaseio.com",
+      projectId: "carpool-d818a",
+      storageBucket: "carpool-d818a.appspot.com",
+      messagingSenderId: "860448885431"
+    };
+    firebase.initializeApp(config);
+  </script>
+    <script>
+      var provider = new firebase.auth.FacebookAuthProvider();
+    </script>
+  </body>
+</html>
