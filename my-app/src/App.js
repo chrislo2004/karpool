@@ -1,4 +1,4 @@
-import reactPolymer from 'react-polymer' // Must be imported before React
+// import reactPolymer from 'react-polymer' // Must be imported before React
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
