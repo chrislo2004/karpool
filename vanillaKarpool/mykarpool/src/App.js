@@ -1,4 +1,4 @@
-import reactPolymer from 'react-polymer' // Must be imported before React
+import reactPolymer from 'react-polymer'; // Must be imported before React
 import React, { Component } from 'react';
 import {
   PaperCheckbox,
@@ -12,7 +12,7 @@ import {
   PaperRadioGroup,
   PaperTabs,
   IronSelector
-} from 'react-polymer/input'
+} from 'react-polymer/input';
 
 import logo from './logo.svg';
 import './App.css';
